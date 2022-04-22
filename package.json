@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/NodiumMC/ndml-libparser.git"
   },
-  "homepage": "https://github.com/NodiumMC/ndml-libparser",
+  "homepage": "https://github.com/NodiumMC/ndml-libparser#readme",
   "bugs": {
     "url": "https://github.com/NodiumMC/ndml-libparser/issues"
   },
