@@ -1,9 +1,17 @@
-import { DownloadableResource, LibraryType, MojangResourceType, NotIncludeCP, RequireOne } from '@ndml/types'
+import {
+  DownloadableResource,
+  LibraryType,
+  MojangResourceType,
+  NotIncludeCP,
+  RequireOne,
+} from '@ndml/types'
 import { NDMLUtils } from '@ndml/utils'
 import path from 'path'
 
 export type Pathed = { path: string }
-export type NativeLib = RequireOne<MojangResourceType, 'url'> & { isNative: boolean } & Pathed
+export type NativeLib = RequireOne<MojangResourceType, 'url'> & {
+  isNative: boolean
+} & Pathed
 export type DefaultLib = DownloadableResource & NotIncludeCP & Pathed
 
 export namespace LibParser {
@@ -47,7 +55,7 @@ export namespace LibParser {
           url: nlib.url,
           size: nlib.size,
           path: nlib.path.split('/').pop(),
-          isNative: true
+          isNative: true,
         }
       })
   }
@@ -61,15 +69,17 @@ export namespace LibParser {
   export const parseLibraries = (libraries: LibraryType[]): DefaultLib[] => {
     return libraries
       .filter(lib => lib && !parseRule(lib))
-      .filter(lib => !(lib.downloads?.classifiers?.[nativeos] && !parseRule(lib)))
+      .filter(
+        lib => !(lib.downloads?.classifiers?.[nativeos] && !parseRule(lib))
+      )
       .map(lib => {
         const libparts = lib?.name?.split(':') || []
         let jarPath, name
         if (lib.downloads?.artifact?.path) {
           name =
             lib.downloads.artifact.path.split('/')[
-            lib.downloads.artifact.path.split('/').length - 1
-              ]
+              lib.downloads.artifact.path.split('/').length - 1
+            ]
           jarPath = popSlashPath(lib.downloads.artifact.path)
         } else {
           name = `${libparts[1]}-${libparts[2]}${
@@ -90,9 +100,8 @@ export namespace LibParser {
           url,
           path: path.join(jarPath, name),
           hash: lib.downloads?.artifact?.sha1,
-          notIncludeCP: lib.notIncludeCP
+          notIncludeCP: lib.notIncludeCP,
         }
       })
   }
-
 }
