@@ -493,15 +493,15 @@
   resolved "https://registry.yarnpkg.com/@ndml/types/-/types-1.0.1.tgz#326c47955e1bf0752aa1723b7f3f6b09811b0689"
   integrity sha512-NJMRmtIFXhOj0PH4jOZFwB8iFZchuv7GB7ycFOq25ZvI1I0GHb0RTz0BUlGyXhxqjgirOhEIAomGWZev4QqynA==
 
-"@ndml/types@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@ndml/types/-/types-1.0.3.tgz#7f97c58f2699cfce224d18a5af0f7c209b25943b"
-  integrity sha512-YYZMgK85zc1LMhRHzoza5KjRGN4KauJWhT/RYDYiFHPXbnvTe1LrGxfGUw/BT2LAe/coQx3ACoWozY2EPsVjRA==
+"@ndml/types@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@ndml/types/-/types-1.0.4.tgz#af0e64a71f57dcd5705378e51faafc5227acf5bb"
+  integrity sha512-kyvWgcZlsSUJXuWvoFkSrd3GtO/2bsNGzteTRd59DKC26/sNbFsrevOb6Ov8rnj68pTW4fwGUe/AwA+XoT9ZRA==
 
-"@ndml/utils@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@ndml/utils/-/utils-1.0.0.tgz#f2f7d278d61b6fd71dbe26abca8a47acb6a6451c"
-  integrity sha512-by6fBfJyz5TOeBOp+SklyMQERopqK+2ui1tl7Pd2HakXChbmuu6I11te7nr3RGKBkOn0Dkmf9up/ETWa4GC0XQ==
+"@ndml/utils@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@ndml/utils/-/utils-1.0.1.tgz#119510b82c6318ca75e0e9cedc8240249684a3d7"
+  integrity sha512-jWDUEtqwvoYgJSNggtGUWaz5sMC7cMTJwwQWg4OWx889BwsrxMugW66YDsDG+2lofsXgvck3ZLPwjE9fK8jcIA==
   dependencies:
     "@ndml/types" "^1.0.1"
 

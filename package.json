@@ -38,7 +38,7 @@
     "yarn": "^1.22.18"
   },
   "dependencies": {
-    "@ndml/types": "^1.0.3",
-    "@ndml/utils": "^1.0.0"
+    "@ndml/types": "^1.0.4",
+    "@ndml/utils": "^1.0.1"
   }
 }
