@@ -1,10 +1,10 @@
 {
   "compilerOptions": {
     "target": "ESNext",
+    "module": "CommonJS",
     "newLine": "crlf",
     "moduleResolution": "node",
     "declaration": true,
-    "emitDeclarationOnly": true,
     "outDir": "./lib",
     "declarationDir": "./lib/types",
     "isolatedModules": true,
