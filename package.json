@@ -1,6 +1,6 @@
 {
   "name": "@ndml/libparser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Minecraft libraries parser for ndml",
   "main": "lib/index.js",
   "author": "LIMPIX31",
